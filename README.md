@@ -1,7 +1,10 @@
 # COVID-Policy-Mental
-This repository contains the code used to produce the results of the COVID-Policy-Mental project.
+    
+This repository contains the analysis code used to generate the results reported in the COVID-Policy-Mental project.
 
 ## Code
+
+Scripts should generally be run in the order listed below, starting with outcome generation and policy index construction, followed by the association and interaction analyses.
 
 - [**20260612_excess_burden_ARIMA_ARIMA-LSTM_Combined.R**](20260612_excess_burden_ARIMA_ARIMA-LSTM_Combined.R) -- This script generates the pandemic-related excess mental health burden estimates used as the outcome data. Three versions of the outcome were generated using ARIMA, ARIMA-LSTM, and the combined ARIMA + ARIMA-LSTM approach, respectively. The combined ARIMA + ARIMA-LSTM estimates were used in the main analysis, whereas the ARIMA-only and ARIMA-LSTM-only estimates were used for sensitivity analyses.
 - [**20260612_excess_burden_ITS.R**](20260612_excess_burden_ITS.R) -- This script generates pandemic-related excess mental health burden estimates using an interrupted time-series (ITS) approach. The resulting excess burden estimates were used as an alternative outcome dataset for sensitivity analysis.
